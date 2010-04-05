@@ -1,1 +1,4 @@
 rake/.cache
+*.swp
+*.swn
+*.swo

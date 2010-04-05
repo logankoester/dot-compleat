@@ -1,0 +1,15 @@
+rvm (usage|version|--help|--version);
+rvm package (readline|iconv|zlib|openssl);
+rvm (
+  (use | reload | implode | update | reset | info | debug | install | uninstall | gemdir
+  | remove | ruby | gem | rake | tests | specs | monitor | gemdir | srcdir | fetch | list | package | notes)
+  [<rubyversion> ...] [--head] [--rubygems] [--default] [--debug] [--force] [--summary] [--jit] [--latest]
+  [--reconfigure] [--level <level>] [--prefix <prefix>] [--bin <path>] [--source <dir>]
+  [--archives <dir>] [-S <file>] [-e <code>] [--gems <path>] [--configure (<option>,...)] [--reconfigure]
+  [--nice] [--ree-options <options>]
+);
+rvm (gemset (create|use|list|((delete|empty) [--force])) <gemset> ...);
+rvm gemset (import|export) <gemset>;
+rvm gemset copy <gemset> <gemset>;
+rubyversion = ! ruby -e 'puts `rvm list`.match(/.*ruby-(.*)-/)[1]+"\nsystem"';
+gemset = ! rvm gemset list | tail -n+2;

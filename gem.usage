@@ -1,0 +1,6 @@
+gem (--help|--version|server);
+gem (install|uninstall) <rubygem>;
+gem help (commands|examples|platforms|build|cert|check|cleanup|contents|dependency|environment|
+fetch|generate_index|help|install|list|lock|migrate|mirror|outdated|owner|pristine|push|query|
+rdoc|search|server|sources|specification|stale|tumble|uninstall|unpack|update|webhook|which|yank);
+rubygem = ! ruby -e '`gem list | tail -n+1`.lines{|l| puts l.match(/(.*?) /)[1]}';

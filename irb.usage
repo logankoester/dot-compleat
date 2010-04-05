@@ -1,0 +1,3 @@
+irb (--version|--help);
+irb ((-f|-m|(-r (<rubygem> ...))|--inspect|--noinspect|--readline|--noreadline|(--prompt (default|simple|xmp|inf-ruby))|--simple-prompt|--noprompt|--tracer|(--back-trace-limit <n>)|(--irb-debug <n>) ...) );
+rubygem = ! ruby -e '`gem list | tail -n+1`.lines{|l| puts l.match(/(.*?) /)[1]}';

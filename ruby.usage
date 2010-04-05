@@ -1,0 +1,3 @@
+ruby [(-c|-e|--debug|-v|-C <dir>|-r <rubygem>) ...];
+ruby [-h|--help];
+rubygem = ! ruby -e '`gem list | tail -n+1`.lines{|l| puts l.match(/(.*?) /)[1]}';

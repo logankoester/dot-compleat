@@ -1,0 +1,2 @@
+mplayer [-quiet | -fs] ...;
+mplayer (-help);

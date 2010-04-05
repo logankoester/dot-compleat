@@ -1,6 +1,13 @@
 git
   ( checkout|co <branch>
   );
+git (branch (-d|-D) [-r] <branch>);
+git (branch [--track|--no-track] <branch>);
+git (branch (-M) <branch> <branch>);
+git (branch (-m) <branch> <newbranch>);
+git (clone <repository> <destination>);
+git (add <file>);
+git (--version | --help);
 
 branch = ! if [ -d .git ]
             then git branch | cut -c 3-
