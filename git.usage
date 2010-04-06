@@ -1,5 +1,5 @@
 git
-  ( checkout|co <branch>
+  ( (checkout|co) <branch>
   );
 git (branch (-d|-D) [-r] (<branch> ...));
 git (branch [--track|--no-track] <branch>);
@@ -9,6 +9,7 @@ git (clone <repository> <destination>);
 git (add <file>);
 git (--version | --help);
 git (fetch <remote>);
+git (cherrypick <commit>);
 
 branch = ! if [ -d .git ]
             then git branch | cut -c 3-
