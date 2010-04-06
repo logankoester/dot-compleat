@@ -1,7 +1,7 @@
 git
   ( checkout|co <branch>
   );
-git (branch (-d|-D) [-r] <branch>);
+git (branch (-d|-D) [-r] (<branch> ...));
 git (branch [--track|--no-track] <branch>);
 git (branch (-M) <branch> <branch>);
 git (branch (-m) <branch> <newbranch>);
