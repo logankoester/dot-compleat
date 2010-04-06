@@ -11,6 +11,7 @@ git (add <file>);
 git (--version | --help);
 git (fetch <remote>);
 git (cherry-pick <commit>);
+git (push <remote> <branch>);
 
 branch = ! if [ -d .git ]
             then git branch | cut -c 3-
